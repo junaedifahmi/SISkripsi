@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block judul%} Bimbingan Proposal {%endblock%}
+
+{% block content%}
+	<table class="mui-table mui-table--bordere">
+		<tr>
+			<th> No </th>
+			<th> Tanggal </th>
+			<th> Hasil Bimbingan </th>	
+		</tr>
+		
+		<tr>
+			<td> {{no}} </td>
+			<td> {{tanggal}} </td>
+			<td> {{hasil}} </td>
+		</tr>
+
+		<tr>
+			<td> {{no}} </td>
+			<td> {{tanggal}} </td>
+			<td> {{hasil}} </td>
+		</tr>
+
+	</table>
+	<form class="form">
+		<input type="number" name="no">
+		<input type="date" name="tanggal">
+		<input type="textarea" name="hasil">
+	</form>
+{%endblock%}

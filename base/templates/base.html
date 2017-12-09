@@ -1,0 +1,82 @@
+{% load staticfiles%}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'mui/css/mui.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'mui/side/style.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'image/favicon.png' %}"/>
+    <script src="{% static 'mui/js/mui.min.js' %}"></script>
+    <script src="{% static 'mui/side/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'mui/side/script.js' %}"></script>
+    <title>{% block title %} SISkripsi {% endblock %}</title>
+
+  </head>
+  <body>
+    <div id="sidedrawer" class="mui--no-user-select">
+      <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <span class="mui--text-title">SISkripsi</span>
+      </div>
+      <div class="mui-divider">
+      </div>
+      <ul>
+        <li>
+           <strong>Beranda</strong>
+           <ul>
+             <li><a href="{% url 'base:home' %}">Me </a> </li>
+           </ul>
+        </li>
+        <li>
+          <strong>Proposal</strong>
+          <ul>
+            <li><a href="{% url 'proposal:dexprop' %}">Identitas Proposal</a></li>
+            <li><a href="{% url 'proposal:bimbingan' %}">Bimbingan</a></li>
+            <li><a href="{% url 'proposal:sidang' %}">Sidang</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Skripsi</strong>
+          <ul>
+            <li><a href="{% url 'skripsi:dexskripsi' %}">Identitas Skripsi</a></li>
+            <li><a href="{% url 'skripsi:bimbingan' %}">Bimbingan Skripsi</a></li>
+            <li><a href="{% url 'skripsi:sidang' %}">Sidang</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Yudisium</strong>
+          <ul>
+            <li><a href="{% url 'yudisium:sidang' %}">Sidang</a></li>
+            <li><a href="{% url 'yudisium:revisi' %}">Revisi</a></li>
+            <li><a href="{% url 'yudisium:jurnal' %}">Jurnal</a></li>
+            <li><a href="{% url 'yudisium:wisuda' %}">Wisuda</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <header id="header">
+      <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+          <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+          <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰ <span style="text-align: center; font-size: 32;">{% block judul %}  etaaa  {% endblock %}</span> </a>
+          <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">SISkripsi</span>
+        </div>
+      </div>
+    </header>
+    <div id="content-wrapper" style="margin-left: 40 ">
+      <div class="mui--appbar-height"></div>
+      <div class="mui-container-fluid">
+        {% block content %}
+        Etaah
+        {% endblock %}
+        
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="mui-container-fluid">
+       
+      </div>
+    </footer>
+  </body>
+</html>
