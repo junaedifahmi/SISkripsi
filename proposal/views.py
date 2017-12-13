@@ -1,18 +1,22 @@
 from django.shortcuts import render
+from django.views.generic import *
 
 # Create your views here.
 
-def dexprop(request):
-	return render(request,'dexprop.html')
+class IndexProp(ListView):
+    template_name = 'dexprop.html'
 
-def bimbingan(request):
-	contex = {
-		'no' : '1',
-		'tanggal' : '12 Juli 1996',
-		'hasil' : 'Teruskan lh'
-	}
+    def get_queryset(self):
+        pass
 
-	return render(request, 'bimprop.html',contex)
+class Bimbingan(View):
+    template_name = 'bimprop.html'
 
-def sidang(request):
-	return render(request, 'sidprop.html')
+    def get(self, request):
+        return render(request,self.template_name)
+
+    def get_queryset(self):
+        pass
+
+class SidangProposal(View):
+    template_name = 'sidprop.html'

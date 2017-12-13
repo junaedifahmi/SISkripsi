@@ -1,8 +1,9 @@
 from django.conf.urls import include, url
+
 from proposal.views import *
 
 urlpatterns = [
-    url(r'^$',dexprop,name='dexprop'),
-    url(r'^bimbingan/',bimbingan,name='bimbingan'),
-    url(r'^sidang',sidang,name='sidang')
+    url(r'^$',IndexProp.as_view(),name='proposal'),
+    url(r'^bimbingan/',Bimbingan.as_view(),name='bimbingan'),
+    url(r'^sidang',SidangProposal.as_view(),name='sidang')
 ]
