@@ -26,14 +26,15 @@
            <strong>Beranda</strong>
            <ul>
              <li><a href="{% url 'base:home' %}">Me </a> </li>
+             <li><a href="{% url 'base:logout' %}">Logout </a> </li>
            </ul>
         </li>
         <li>
           <strong>Proposal</strong>
           <ul>
-            <li><a href="{% url 'proposal:bimbingan'%}">Identitas Proposal</a></li>
-            <li><a href="#">Bimbingan</a></li>
-            <li><a href="#">Sidang</a></li>
+            <li><a href="{% url 'proposal:index'%}">Identitas Proposal</a></li>
+            <li><a href="{% url 'proposal:bimbingan'%}">Bimbingan</a></li>
+            <li><a href="{% url 'proposal:sidang'%}">Sidang</a></li>
           </ul>
         </li>
         <li>
@@ -64,7 +65,7 @@
         </div>
       </div>
     </header>
-    <div id="content-wrapper" style="margin-left: 40 ">
+    <div id="content-wrapper" style=" padding-top: 30px ">
       <div class="mui--appbar-height"></div>
       <div class="mui-container-fluid">
         {% block content %}
@@ -73,10 +74,10 @@
 
       </div>
     </div>
-    <footer id="footer">
-      <div class="mui-container-fluid">
+    <!--<footer id="footer">-->
+      <!--<div class="mui-container-fluid">-->
 
-      </div>
-    </footer>
+      <!--</div>-->
+    <!--</footer>-->
   </body>
 </html>

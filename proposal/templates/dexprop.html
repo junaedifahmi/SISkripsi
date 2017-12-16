@@ -1,38 +1,51 @@
 {%extends "base.html"%}
 {%block title%} Proposal {%endblock%}
 
-{% block judul %} {{judul}} {%endblock%}
+{% block judul %} Proposal {%endblock%}
 
 {%block content%}
-
-<div style="margin-top: 20; margin-left: 40;">
-    <form class="mui-form" action="" method="POST">
+{% if prop is None %}
+<div>
+    <form class="mui-form" action="{% url 'proposal:edit'%}" method="POST">
         {% csrf_token %}
         <legend>Proposal Skripsi</legend>
         <div class="mui-textfield mui-textfield--float-label">
-            <input type="text" id="judul">
+            <input type="text" id="judul" name="judul" required>
             <label>Judul</label>
         </div>
         <div class="mui-textfield mui-textfield--float-label">
-            <textarea id="ringkasan"></textarea>
+            <textarea id="ringkasan" name="ringkasan" required rows="1"></textarea>
             <label>Ringkasan</label>
         </div>
+
         <div class="mui-textfield mui-textfield--float-label">
-            <input type="text" id="keyword">
+            <input type="text" id="keywords" name="keywords" required >
             <label>Kata Kunci</label>
         </div>
         <div class="mui-select">
-            <select>
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-                <option>Option 4</option>
+            <select id="dosepem" name="dosepem" required>
+                {% for dsn in dosen %}
+
+                <option value="{{dsn.nidn}}"> {{dsn}} </option>
+
+                {% endfor %}
             </select>
             <label>Dosen Pembimbing</label>
         </div>
         <button type="submit" class="mui-btn mui-btn--raised">Masukkan</button>
     </form>
 </div>
+{% else %}
+<div>
+    <div class="mui-panel" style="padding-top: 50 px">
+        <h1> {{prop.judul}} </h1>
+        <h1> {{prop.Ringkasan}} </h1>
+        <h1> {{prop.dospem}} </h1>
+    </div>
 
+
+</div>
+
+{% endif %}
 
 {%endblock%}

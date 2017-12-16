@@ -3,5 +3,34 @@
 {%block judul%} Sidang Prpoposal {%endblock%}
 
 {%block content%}
-	
+	<div class="mui-panel">
+        <h1> Selamat, perjalanan anda hampir selesai, </h1>
+        <h2> Untuk sidang, anda harus mengecek kembali kelengkapan sidang anda </h2>
+
+        <form class="mui-form" method="post" >
+            {% csrf_token %}
+            <div class="mui-checkbox">
+                <input type="checkbox" id="dospem" name="bimbingan" checked="{{a}}" disabled required>
+                <label for="dospem"> Bimbingan lebih dari 3 (tiga) kali? </label>
+            </div>
+
+            <div class="mui-checkbox">
+                <input type="checkbox" id="persetujuan" name="persetujuan" disabled required>
+                <label for="persetujuan">  Dosen Pembimbing OK? </label>
+            </div>
+
+            <div class="mui-checkbox">
+                <input type="checkbox" name="dospem" required>
+                <label for="dospem"> Dosen Pembimbing </label>
+            </div>
+
+            <div class="mui-file">
+                <label for="fileprop"> Upload file proposalnya di sini</label>
+                <input type="file" required name="fileprop" id="fileprop" aria-modal="true">
+            </div>
+
+            <button type="submit" class="mui-btn mui-btn--primary mui-btn--raised"> Bawa aku pergi dari sini ! </button>
+
+        </form>
+    </div>
 {%endblock%}
