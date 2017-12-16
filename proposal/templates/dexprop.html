@@ -5,8 +5,8 @@
 
 {%block content%}
 
-<div style="margin-top: 20; margin-left: 40;">
-    <form class="mui-form" action="" method="POST">
+<div>
+    <form class="mui-form" action="{% url 'proposal:edit'%}" method="POST">
         {% csrf_token %}
         <legend>Proposal Skripsi</legend>
         <div class="mui-textfield mui-textfield--float-label">
@@ -18,7 +18,7 @@
             <label>Ringkasan</label>
         </div>
         <div class="mui-textfield mui-textfield--float-label">
-            <input type="text" id="keyword">
+            <input type="text" id="keywords">
             <label>Kata Kunci</label>
         </div>
         <div class="mui-select">

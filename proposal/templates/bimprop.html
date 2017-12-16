@@ -3,30 +3,52 @@
 {% block judul%} Bimbingan Proposal {%endblock%}
 
 {% block content%}
-	<table class="mui-table mui-table--bordere">
-		<tr>
-			<th> No </th>
-			<th> Tanggal </th>
-			<th> Hasil Bimbingan </th>
-		</tr>
+<h2> Semangat terus proposal nya</h2>
 
-		<tr>
-			<td> {{no}} </td>
-			<td> {{tanggal}} </td>
-			<td> {{hasil}} </td>
-		</tr>
+<table class="mui-table">
+<form class="mui-form--inline" action="{% url 'proposal:tambah' %}" method="post">
+	{% csrf_token %}
+	<td>
+		<div class="mui-textfield mui-textfield--float-label required">
+			<input type="number" id="no" required min="1" max="16">
+			<label>Pertemuan ke</label>
+		</div>
+	</td>
 
-		<tr>
-			<td> {{no}} </td>
-			<td> {{tanggal}} </td>
-			<td> {{hasil}} </td>
-		</tr>
+	<td>
+		<div class="mui-textfield">
+			<input type="date" id="tanggal" required>
+			<label>Tanggal</label>
+		</div>
+	</td>
 
-	</table>
+	<td>
+		<div class="mui-textfield mui-textfield--float-label">
+			<input type="text" id="hasil" required>
+			<label>Hasil Bimbingan</label>
+		</div>
+	</td>
+	<td>
+		<button type="submit" class="mui-btn mui-btn--raised "><span class="mdi-plus-circle-outline">+</span></button>
+	</td>
+</form>
+</table>
 
-	<form class="form">
-		<input type="number" name="no">
-		<input type="date" name="tanggal">
-		<input type="textarea" name="hasil">
-	</form>
-{%endblock%}
+<table class="mui-table mui-table--bordered">
+	<thead>
+		<th> Bimbingan ke </th>
+		<th> Tanggal Bimbingan</th>
+		<th> Hasil Bimbingan</th>
+	</thead>
+
+	{% for bim in a%}
+	<tr>
+		<td> {{bim.id}} </td>
+		<td> {{bim.tanggal}} </td>
+		<td> {{bim.hasil}} </td>
+	</tr>
+	{% endfor %}
+</table>
+
+
+{% endblock %}

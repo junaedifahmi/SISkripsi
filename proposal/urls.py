@@ -2,8 +2,12 @@ from django.conf.urls import include, url
 
 from proposal.views import *
 
+app_name = 'proposal'
+
 urlpatterns = [
-    url(r'^$',IndexProp.as_view(),name='proposal'),
-    url(r'^bimbingan/',Bimbingan.as_view(),name='bimbingan'),
-    url(r'^sidang',SidangProposal.as_view(),name='sidang')
+    url(r'^$', index, name='index'),
+    url(r'^edit/', edit, name='edit'),
+    url(r'^bimbingan/$', bimbingan, name='bimbingan'),
+    url(r'^bimbingan/tambah/', tambah, name='tambah'),
+    url(r'^sidang', sidang, name='sidang')
 ]
