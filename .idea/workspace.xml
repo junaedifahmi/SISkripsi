@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4139d139-50a1-4441-955f-73bf436891c1" name="Default" comment="fungsi sudah jalan semua, tinggal">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SISkripsi/Middlware.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proposal/forms.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/migrations/0002_auto_20171216_0825.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/migrations/0003_auto_20171216_0932.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/migrations/0004_auto_20171216_1654.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proposal/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proposal/migrations/0002_bimbinganproposal_tanggal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proposal/migrations/0003_auto_20171216_0932.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proposal/migrations/0004_auto_20171216_1103.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proposal/migrations/0005_auto_20171216_1654.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/templates/dex.html" afterPath="$PROJECT_DIR$/base/templates/indexform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SISkripsi/settings.py" afterPath="$PROJECT_DIR$/SISkripsi/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SISkripsi/urls.py" afterPath="$PROJECT_DIR$/SISkripsi/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/admin.py" afterPath="$PROJECT_DIR$/base/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/models.py" afterPath="$PROJECT_DIR$/base/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/templates/base.html" afterPath="$PROJECT_DIR$/base/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/templates/home.html" afterPath="$PROJECT_DIR$/base/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/urls.py" afterPath="$PROJECT_DIR$/base/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/views.py" afterPath="$PROJECT_DIR$/base/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/admin.py" afterPath="$PROJECT_DIR$/proposal/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/models.py" afterPath="$PROJECT_DIR$/proposal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/templates/bimprop.html" afterPath="$PROJECT_DIR$/proposal/templates/bimprop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/templates/dexprop.html" afterPath="$PROJECT_DIR$/proposal/templates/dexprop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/templates/sidprop.html" afterPath="$PROJECT_DIR$/proposal/templates/sidprop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/urls.py" afterPath="$PROJECT_DIR$/proposal/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proposal/views.py" afterPath="$PROJECT_DIR$/proposal/views.py" />
-    </list>
+    <list default="true" id="4139d139-50a1-4441-955f-73bf436891c1" name="Default" comment="fungsi sudah jalan semua, tinggal" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +35,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proposal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="-987">
               <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#15#60#0" expanded="true" />
@@ -89,7 +57,7 @@
       <file leaf-file-name="bimprop.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proposal/templates/bimprop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="782">
               <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
               <folding />
             </state>
@@ -314,10 +282,10 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="26" width="1374" height="746" extended-state="6" />
+    <frame x="406" y="30" width="1374" height="746" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15757576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20436817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15984848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20436817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761312" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -670,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proposal/templates/bimprop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="782">
           <caret line="46" column="37" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
           <folding />
         </state>
@@ -686,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proposal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
+        <state relative-caret-position="-987">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#15#60#0" expanded="true" />
