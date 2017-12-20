@@ -1,36 +1,41 @@
 {% extends 'base.html' %}
-
+{% block title %}
+    Seminar Proposal
+{% endblock %}
 {%block judul%} Sidang Prpoposal {%endblock%}
 
 {%block content%}
+    {% if ada %}
+        <div class="mui-panel">
+      <h1> Anda Sudah Mendaftar Seminar</h1>
+        <h2>  Silakan tunggu pemberitahuan untuk waktu dan tempat sidang </h2>
+    </div>
+
+    {% else %}
 	<div class="mui-panel">
         <h1> Selamat, perjalanan anda hampir selesai, </h1>
         <h2> Untuk sidang, anda harus mengecek kembali kelengkapan sidang anda </h2>
-
-        <form class="mui-form" method="post" >
+        <h1>{{ oke }}</h1>
+        <form class="mui-form" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="mui-checkbox">
-                <input type="checkbox" id="dospem" name="bimbingan" checked="{{a}}" disabled required>
+                <input type="checkbox" id="dospem" name="bimbingan" {{ masabimbingan }} disabled required>
                 <label for="dospem"> Bimbingan lebih dari 3 (tiga) kali? </label>
             </div>
 
             <div class="mui-checkbox">
-                <input type="checkbox" id="persetujuan" name="persetujuan" disabled required>
+                <input type="checkbox" id="persetujuan" name="persetujuan" readonly {{ persetujuan }} required>
                 <label for="persetujuan">  Dosen Pembimbing OK? </label>
-            </div>
-
-            <div class="mui-checkbox">
-                <input type="checkbox" name="dospem" required>
-                <label for="dospem"> Dosen Pembimbing </label>
             </div>
 
             <div class="mui-file">
                 <label for="fileprop"> Upload file proposalnya di sini</label>
-                <input type="file" required name="fileprop" id="fileprop" aria-modal="true">
+                {{ form.fileProposal }}
             </div>
 
             <button type="submit" class="mui-btn mui-btn--primary mui-btn--raised"> Bawa aku pergi dari sini ! </button>
 
         </form>
     </div>
+    {% endif %}
 {%endblock%}

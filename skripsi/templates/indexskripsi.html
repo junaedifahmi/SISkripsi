@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Skripsi {% endblock %}
+{% block judul %} Skripsi Mu {% endblock %}
+
+{% block content %}
+    {% if error_skripsi is None %}
+        {{ error_skripsi }}
+    {% else %}
+    <div class="mui-panel" style="padding-top: 50px; text-align: center; background-color:#0288D1;">
+        <h2> {{ skripsi.judul }} </h2>
+        <i> Diajukan oleh: </i>
+        <h3>
+            {{ user.akunMhs.first_name }} {{ user.akunMhs.last_name }}
+        </h3>
+        <h4> NPM : {{ user.npm }} </h4>
+        <i> Disetujui pada tanggal {{ seminar.tanggal }} </i>
+
+        <div class="mui-col-md-6"> <i> Dosen Pembimbing 1 : {{ skripsi.dospem1 }} {{ prop.dospem1.gelar }}</i> </div>
+        <div class="mui-col-md-6"> <i> Dosen Pembimbing 2 : {{ skripsi.dospem2 }} {{ prop.dospem2.gelar }}</i> </div>
+        <hr>
+        <p> {{ skripsi.ringkasan }} </p>
+        <hr>
+        <i> <p>Kata Kunci : {{ skripsi.katakunci }}</p></i>
+    </div>
+    {% endif %}
+{% endblock %}

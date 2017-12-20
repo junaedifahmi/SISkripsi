@@ -1,0 +1,24 @@
+<div>
+    <form class="mui-form" method="POST">
+        {% csrf_token %}
+        <legend>Proposal Skripsi</legend>
+        <div class="mui-textfield mui-textfield--float-label">
+            {{ form.judul }}
+            <label>Judul</label>
+        </div>
+        <div class="mui-textfield mui-textfield--float-label">
+            {{ form.ringkasan }}
+            <label>Ringkasan</label>
+        </div>
+
+        <div class="mui-textfield mui-textfield--float-label">
+            {{ form.katakunci }}
+            <label>Kata Kunci</label>
+        </div>
+        <div class="mui-select">
+            {{ form.dospem }}
+            <label>Dosen Pembimbing</label>
+        </div>
+        <button type="submit" class="mui-btn mui-btn--raised">Masukkan</button>
+    </form>
+</div>

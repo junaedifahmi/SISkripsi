@@ -1,0 +1,31 @@
+{%extends 'base.html' %}
+{% block title %} Bimbingan Skripsi {% endblock %}
+
+{% block judul %} Bimbingan ceria bersama {% endblock %}
+
+{% block content %}
+    {% include 'skripsi/skripsi-form.html' %}
+    {% if error_bimbingan is None %}
+        <div class="mui--bg-danger"> <h1> {{ error_bimbingan }} </h1> </div>
+    {% else %}
+        <table class="mui-table">
+        <thead>
+            <tr>
+                <td> No </td>
+                <td> Tanggal </td>
+                <td> Hasil Bimbingan </td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bim in bimbinganskripsi %}
+            <tr>
+                <td> {{ forloop.counter }} </td>
+                <td> {{ bim.tanggal }} </td>
+                <td> {{ bim.hasil | truncatewords:3 }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{%extends "base.html"%}
+{%block title%} Proposal {%endblock%}
+
+{% block judul %} Proposal {%endblock%}
+
+{%block content%}
+{% if prop is None %}
+    {% include 'proposal/proposal_form.html' %}
+{% else %}
+<div>
+    <div class="mui-panel" style="padding-top: 50px; text-align: center;">
+        <a href="{% url 'proposal:edit' prop.pk %}" class="mui--pull-right"> Edit </a>
+        <h2> {{ prop.judul }} </h2>
+        <i> Diajukan oleh: </i>
+        <h3>
+            {{ user.akunMhs.first_name }} {{ user.akunMhs.last_name }}
+        </h3>
+        <h4> NPM : {{ user.npm }} </h4>
+        <i> Dosen Pembimbing : {{ prop.dospem }} {{ prop.dospem.gelar }}</i>
+        <hr>
+        <p> {{ prop.ringkasan }} </p>
+        <hr>
+        <i> <p>Kata Kunci : {{ prop.katakunci }}</p></i>
+    </div>
+</div>
+
+{% endif %}
+
+{%endblock%}

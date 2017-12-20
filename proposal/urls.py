@@ -1,3 +1,11 @@
+# coding=utf-8
+
+
+"""
+xcfhjk
+"""
+
+
 from django.conf.urls import url
 from django.contrib.auth.decorators import login_required
 from proposal.views import *
@@ -5,9 +13,8 @@ from proposal.views import *
 app_name = 'proposal'
 
 urlpatterns = [
-    url(r'^$', login_required(index), name='index'),
-    url(r'^edit/', edit, name='edit'),
-    url(r'^bimbingan/$', login_required(bimbingan), name='bimbingan'),
-    url(r'^bimbingan/tambah/', tambah, name='tambah'),
-    url(r'^sidang', login_required(sidang), name='sidang')
-]
+    url(r'^$', login_required(Index.as_view()), name='index'),
+    url(r'^edit/(?P<pk>[0-9]+)/$', Edit.as_view(), name='edit'),
+    url(r'^bimbingan/$', login_required(Bimbingan.as_view()), name='bimbingan'),
+    url(r'^seminar', login_required(Seminar.as_view()), name='seminar'),
+    ]
