@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4139d139-50a1-4441-955f-73bf436891c1" name="Default" comment="fungsi sudah jalan semua, tinggal">
-      <change beforePath="" afterPath="$PROJECT_DIR$/proposal/templates/proposal/proposal_form.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/skripsi/forms.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/base/templates/base.html" afterPath="$PROJECT_DIR$/base/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/base/templates/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/base/views.py" afterPath="$PROJECT_DIR$/base/views.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/proposal/forms.py" afterPath="$PROJECT_DIR$/proposal/forms.py" />
-      <change beforePath="$PROJECT_DIR$/proposal/models.py" afterPath="$PROJECT_DIR$/proposal/models.py" />
-      <change beforePath="$PROJECT_DIR$/proposal/templates/bimprop.html" afterPath="$PROJECT_DIR$/proposal/templates/bimbinganproposal.html" />
-      <change beforePath="$PROJECT_DIR$/proposal/templates/dexprop.html" afterPath="$PROJECT_DIR$/proposal/templates/indexproposal.html" />
-      <change beforePath="$PROJECT_DIR$/proposal/templates/sidprop.html" afterPath="$PROJECT_DIR$/proposal/templates/sidangproposal.html" />
-      <change beforePath="$PROJECT_DIR$/proposal/urls.py" afterPath="$PROJECT_DIR$/proposal/urls.py" />
-      <change beforePath="$PROJECT_DIR$/proposal/views.py" afterPath="$PROJECT_DIR$/proposal/views.py" />
-      <change beforePath="$PROJECT_DIR$/skripsi/models.py" afterPath="$PROJECT_DIR$/skripsi/models.py" />
-      <change beforePath="$PROJECT_DIR$/skripsi/templates/bimbingan/ListBimbingan.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/skripsi/templates/bimbingan/detailBimbingan.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/skripsi/templates/bimskrip.html" afterPath="$PROJECT_DIR$/skripsi/templates/bimbinganskripsi.html" />
-      <change beforePath="$PROJECT_DIR$/skripsi/templates/dexskripsi.html" afterPath="$PROJECT_DIR$/skripsi/templates/indexskripsi.html" />
-      <change beforePath="$PROJECT_DIR$/skripsi/templates/sidskrip.html" afterPath="$PROJECT_DIR$/skripsi/templates/sidangskripsi.html" />
-      <change beforePath="$PROJECT_DIR$/skripsi/views.py" afterPath="$PROJECT_DIR$/skripsi/views.py" />
-    </list>
+    <list default="true" id="4139d139-50a1-4441-955f-73bf436891c1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/skripsi/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="88" lean-forward="true" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+              <caret line="8" column="88" lean-forward="false" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -204,6 +181,7 @@
         <option value="Junaedi Fahmi &lt;junaedi.fahmi15081@student.unsika.ac.id&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -461,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514121485028</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Perubahan view ke class-based view. jadi biar lebih singkat di urls nya">
+      <created>1514337421719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1514337421719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -475,10 +460,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="412" y="27" width="1374" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.49621212" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5080386" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5080386" sideWeight="0.4969697" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5080386" sideWeight="0.5060606" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5080386" sideWeight="0.4939394" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32713178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24276528" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
@@ -539,7 +525,8 @@
     <MESSAGE value="udah bisa upload file, tapi masih error untuk relasi hasil dari form dan hasil dari sistem" />
     <MESSAGE value="fungsi sudah jalan semua, tinggal" />
     <MESSAGE value="Udah bisa file upload, tapi masih error pas integrasi dari model ke database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Udah bisa file upload, tapi masih error pas integrasi dari model ke database" />
+    <MESSAGE value="Perubahan view ke class-based view. jadi biar lebih singkat di urls nya" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perubahan view ke class-based view. jadi biar lebih singkat di urls nya" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -858,7 +845,7 @@
     <entry file="file://$PROJECT_DIR$/skripsi/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="88" lean-forward="true" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+          <caret line="8" column="88" lean-forward="false" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

@@ -1,0 +1,11 @@
+<div>
+    <form class="mui-form" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="mui-textfield">
+                <label> {{ field.tag }} </label>
+                {{ field }}
+            </div>
+        {% endfor %}
+    </form>
+</div>
